@@ -1,0 +1,570 @@
+    body {
+        margin: 0;
+        font-family: "ProximaNovaRegular";
+    }
+    /***********************************8
+    
+                 Шапка
+    
+    ************************************/
+
+    .header {
+        background-color: #000;
+        display: flex;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        padding-left: 50px;
+        padding-right: 90px;
+        font-family: "ProximaNovaBold";
+        color: #fff;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .nav ul {
+        padding-left: 0px;
+    }
+
+    .nav ul li {
+        margin-left: 45px;
+        list-style: none;
+        float: left;
+    }
+
+    .nav ul li:first-child {
+        margin-left: 0;
+    }
+
+
+
+    .nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .nav ul li a:hover {
+        color: #F24075;
+        transition: 0.2s ease-in;
+        /* Плавный переход*/
+    }
+
+
+    .cart {
+        padding-top: 15px;
+        margin-left: auto;
+        font-size: 16px;
+    }
+
+    .cart__search {
+        margin-right: 25px;
+        color: #fff;
+    }
+
+
+    .cart__search:hover {
+        color: #F24075;
+        transition: 0.2s ease-in;
+    }
+
+    .cart__shopping-cart {
+        margin-right: 5px;
+        color: #fff;
+    }
+
+    .cart__shopping-cart:hover {
+        color: #F24075;
+        transition: 0.2s ease-in;
+    }
+    /************************************************ */
+    /*Слайдер Хедер*/
+    /************************************************* */
+
+    .slider {
+        height: 800px;
+    }
+
+    .slider__item {
+        height: 800px;
+        background-repeat: no-repeat;
+        /* без повтора*/
+        background-position: center;
+        /* По центру :)*/
+        background-size: cover;
+        /*По всей ширине экрана*/
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider__centered-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider__title {
+        color: #fff;
+        font-size: 80px;
+        font-family: "ProximaNovaBlack";
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+
+    .slider__button {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px 33px;
+        line-height: 1;
+        font-size: 18px;
+        font-family: "ProximaNovaBold";
+        color: #fff;
+        background-color: #000;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: auto;
+        /* Только при Flex*/
+        transition: 0.2s ease-in;
+    }
+
+    .slider__button:hover {
+        background-color: #F24075;
+        color: #000
+    }
+    /*********************************Карусель */
+    /*******************************************
+     
+                     Слайдер Сноуборды
+    
+    *********************************************/
+
+    .container-full {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container--snowboards {
+        margin-bottom: 20px;
+    }
+
+
+    .header-group {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 150px;
+    }
+
+    .header-group::after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 30px;
+        width: 30px;
+        background-image: url("../img/icons/icon-x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    h1 {
+        color: #000;
+        font-size: 44px;
+        font-family: "ProximaNovaBlack";
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .sub-title {
+        font-family: "ProximaNovaRegular";
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .caption {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: "ProximaNovaBold";
+        text-align: center;
+    }
+
+    .slider-snowboards-holder {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-snowboards.owl-carousel {
+        height: 405px;
+        padding-top: 117px;
+        padding-bottom: 50px;
+        width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider-snowboards.owl-carousel .owl-stage-outer {
+        overflow: visible;
+        /* заопнмить*/
+    }
+
+    .slider-snowboards__item {
+        width: 370px;
+        text-align: center;
+    }
+
+    .slider-snowboards.owl-carousel .owl-item img {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .slider-snowboards .owl-item {
+        opacity: 0.5;
+    }
+
+    .slider-snowboards .owl-item.center {
+        opacity: 1;
+        padding-top:
+    }
+    /***********************************************8
+
+             Кнопочки next prev для сноубордов
+
+    **********************************************/
+
+    .slider-snowboards.owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev {
+        width: 300px;
+        height: 300px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .slider-snowboards.owl-carousel .owl-nav .owl-prev {
+
+        background-image: url(../img/icons/prev.png);
+        height: 228px;
+        width: 131px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 33%;
+        height: 228px;
+        width: 131px;
+        outline: none;
+        left: -100px;
+        opacity: 0.3;
+        transition: 0.2s ease-in;
+    }
+
+    .slider-snowboards.owl-carousel .owl-nav .owl-prev:hover {
+        opacity: 1;
+    }
+
+    .slider-snowboards.owl-carousel .owl-nav .owl-next {
+        background-image: url(../img/icons/next.png);
+        height: 228px;
+        width: 131px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 33%;
+        right: -100px;
+        outline: none;
+        opacity: 0.3;
+        transition: 0.2s ease-in;
+    }
+
+    .slider-snowboards.owl-carousel .owl-nav .owl-next:hover {
+        opacity: 1;
+    }
+
+    .owl-item active center {
+        cursor: pointer;
+    }
+    /***************************************
+
+                    Контент
+
+    *****************************************/
+
+    .content {
+        margin-top: 200px;
+        height: 952px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        color: #fff;
+    }
+
+    .content__info {
+        margin-top: 250px;
+        margin-left: 220px;
+        width: 595px;
+    }
+
+    .content__info .content-title {
+        text-transform: uppercase;
+        font-size: 48px;
+        font-family: "ProximaNovaBlack";
+        margin-bottom: 50px;
+    }
+
+    .content-subtitle {
+        line-height: 2;
+        font-size: 15px;
+        font-family: "ProximaNovaRegular";
+    }
+
+    #reg {
+        display: inline-block;
+        font-size: 45px;
+    }
+    /*****************************************
+
+                FEATURES
+
+    ******************************************/
+
+    .features {
+        height: 678px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .features__title {
+        text-align: center;
+        margin-top: 123px;
+    }
+
+    .features-icon {
+        text-align: center;
+    }
+
+    .features__post {
+        margin-right: 27px;
+        margin-top: 213px;
+        font-size: 16px;
+        font-family: ProximanovaBold;
+    }
+    /*****************************************
+
+                    ФУТЕР
+
+    *****************************************/
+
+    .footer {
+        background-color: #000;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+        display: flex;
+    }
+
+
+    .col-3 {
+        width: 25%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .col-3:first-child {
+        width: 16%;
+        margin-left: 30px;
+    }
+
+    .footer-title {
+
+        font-family: "ProximaNovaBold";
+        text-transform: uppercase;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .footer-nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav__link {
+        color: #c9c9c9;
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 12px;
+        transition: 0.2s ease-in;
+    }
+
+    .footer-nav__link:hover {
+        color: #F24075;
+    }
+    /**************************************
+
+             ФОРМА футера
+
+    ***************************************/
+
+    .footer-form {
+        margin-bottom: 60px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .footer-form__input-text {
+        background-color: #fff;
+        height: 48px;
+        width: 163px;
+        display: block;
+        font-size: 15px;
+        border: none;
+        padding: 0;
+        padding-left: 10px;
+        outline: none;
+        transition: 0.2s ease-in;
+    }
+
+
+    .footer-form__input-button {
+        background-color: #c7c7c7;
+        height: 48px;
+        width: 60px;
+        display: block;
+        outline: none;
+        border: none;
+        font-family: ProximaNovaBlack;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+    }
+
+    .footer-form__input-button:hover {
+        background-color: #7D7D7D;
+    }
+    /*****************************************
+
+                    Значки
+
+    *****************************************/
+
+    .nav-links {
+        font-size: 23px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.2s ease-in;
+    }
+
+    .nav-links a {
+        color: #fff;
+        transition: 0.2s ease-in;
+    }
+
+    .nav-links__vk:hover {
+        color: #259CD8;
+    }
+
+    .nav-links__twitter:hover {
+        color: #1CA0F0;
+    }
+
+    .nav-links__instagram:hover {
+        color: #DC2F7E;
+    }
+
+    .nav-links__facebook:hover {
+        color: #4867AA;
+    }
+
+    .nav-links__youtube:hover {
+        color: #F70404;
+    }
+    /* Копирайт */
+
+    .footer-copyright {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 38px;
+        color: #c7c7c7;
+    }
+
+    .footer-copyright .region {
+        padding-top: 18px;
+        color: #c7c7c7;
+    }
+
+    .region__pic {
+        margin-right: 10px;
+    }
+
+    .footer-copyright .region:hover {
+        padding-top: 18px;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        color: #fff;
+    }
+    /*Updown button*/
+
+    #top {
+        position: fixed;
+        right: 60px;
+        bottom: 60px;
+        cursor: pointer;
+        opacity: 0.3;
+        transition: 0.2s ease-in;
+    }
+
+    #top:hover {
+        opacity: 1;
+    }
